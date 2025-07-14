@@ -10,7 +10,7 @@ public:
                 map[s[i]]++;   
         }
         for(int i=0; i<s.length(); i++)
-            if(map[s.at(i)] == 1)
+            if(map[s[i]] == 1)
                 return i;
         return -1;
     }
