@@ -10,7 +10,8 @@ class Solution:
                 cur_sum-=nums[l]
                 a.remove(nums[l])
                 l+=1
-            a.add(nums[r])
+            
             cur_sum+=nums[r]
+            a.add(nums[r])
             max_sum=max(cur_sum,max_sum)
         return max_sum
